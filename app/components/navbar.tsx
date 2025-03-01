@@ -15,18 +15,18 @@ export default function Header() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-[#021B41] shadow-md"
+      className="bg-[#021B41] shadow-md opacity-50"
     >
       <div className="container mx-auto flex items-center justify-between py-1 px-6">
         
         {/* Logo */}
         <Link href="/">
           <Image 
-            src="/images/logo.png" 
+            src="/images/logooo.png" 
             alt="Logo"
-            width={120}
+            width={70}
             height={50}
-            className="cursor-pointer "
+            className="cursor-pointer mr-2"
           />
         </Link>
 
@@ -35,6 +35,7 @@ export default function Header() {
           <Link href="/" className="text-white hover:text-gray-300">HOME</Link>
           <Link href="/shop" className="text-white hover:text-gray-300">SHOP</Link>
           <Link href="/create-design" className="text-white hover:text-gray-300">CREATE DESIGN</Link>
+          <Link href="/prompts" className="text-white hover:text-gray-300">VIEW PROMPTS</Link>
           <Link href="/about" className="text-white hover:text-gray-300">ABOUT</Link>
           <Link href="/cart">
             <AiOutlineShoppingCart className="text-white hover:text-gray-300 text-2xl" />
@@ -58,11 +59,12 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="md:hidden bg-[#021B41] text-white flex flex-col items-center space-y-6 py-6"
+            className="md:hidden bg-[#021B41]  text-white flex flex-col items-center space-y-6 py-6"
           >
             <Link href="/" onClick={() => setIsOpen(false)}>HOME</Link>
             <Link href="/shop" onClick={() => setIsOpen(false)}>SHOP</Link>
             <Link href="/create-design" onClick={() => setIsOpen(false)}>CREATE DESIGN</Link>
+            <Link href="/propmts" onClick={() => setIsOpen(false)}>VIEW PROPMTS</Link>
             <Link href="/about" onClick={() => setIsOpen(false)}>ABOUT</Link>
             <Link href="/cart" onClick={() => setIsOpen(false)}>
               <AiOutlineShoppingCart className="text-2xl" />
