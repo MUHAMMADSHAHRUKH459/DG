@@ -29,7 +29,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-extrabold"
+              className="text-5xl md:text-6xl md:font-extrabold lg:font-extrabold lg:text-7xl font-extrabold"
             >
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-950 to-blue-600">Unleash Your</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-950 to-blue-600">Creativity,</span>
