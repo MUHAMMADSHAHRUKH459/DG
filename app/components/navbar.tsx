@@ -64,7 +64,7 @@ export default function Header() {
             <Link href="/" onClick={() => setIsOpen(false)}>HOME</Link>
             <Link href="/shop" onClick={() => setIsOpen(false)}>SHOP</Link>
             <Link href="/create-design" onClick={() => setIsOpen(false)}>CREATE DESIGN</Link>
-            <Link href="/propmts" onClick={() => setIsOpen(false)}>VIEW PROPMTS</Link>
+            <Link href="/prompts" onClick={() => setIsOpen(false)}>VIEW PROPMTS</Link>
             <Link href="/about" onClick={() => setIsOpen(false)}>ABOUT</Link>
             <Link href="/cart" onClick={() => setIsOpen(false)}>
               <AiOutlineShoppingCart className="text-2xl" />
