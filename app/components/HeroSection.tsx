@@ -102,7 +102,7 @@ const HeroSection = () => {
           <motion.img
             src="/images/hero1.png"
             alt="Hero Image"
-            className="w-auto h-auto max-h-[60vh] mt-11 md:max-h-screen lg:w-[700px] lg:h-[700px] object-contain rounded-lg relative z-10"
+            className="w-auto h-auto max-h-[60vh] lg:mt-20 md:max-h-screen lg:w-[700px] lg:h-[700px] object-contain rounded-lg relative z-10 mt-[-11px]"
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
