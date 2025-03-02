@@ -90,7 +90,7 @@ const HeroSection = () => {
               </div>
 
               {/* Circular Image */}
-              <div className="w-40  ml-6 overflow-hidden rounded-tr-[31px] hidden md:block">
+              <div className="w-40 h-32 ml-6 overflow-hidden rounded-tr-[31px] hidden md:block">
                 <img src="/images/hero3.png" alt="Circular" className="w-full h-full object-cover" />
               </div>
             </motion.div>
@@ -111,11 +111,11 @@ const HeroSection = () => {
             <motion.img
   src="/images/hero1.png"
   alt="Hero Image"
-  className="w-auto h-auto mt-[-65px]  md:w-96 md:h-screen lg:w-[700px] lg:h-[700px] object-cover rounded-lg relative z-10"
+  className="w-auto h-auto max-h-[60vh] mt-11 md:max-h-screen lg:w-[700px] lg:h-[700px] object-contain rounded-lg relative z-10"
   animate={{ scale: [1, 1.02, 1] }}
   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-  style={{ height: "100%" }}  // Yeh line ensure karegi ke image full height le le
 />
+
 
           </motion.div>
         </div>
