@@ -14,15 +14,13 @@ interface CustomButtonProps {
 // Custom Button Component
 const CustomButton: React.FC<CustomButtonProps> = ({ label, icon: Icon, onClick }) => {
   return (
-    
     <motion.button
       onClick={onClick}
       className="flex-1 px-6 py-3 rounded-2xl font-medium flex items-center justify-center gap-2  
-      border border-zinc-600 bg-gradient-to-r from-[#001534]  to-[#021f4b] 
-      hover:from-blue-400  hover:to-blue-950 transition-all duration-300 
+      border border-zinc-600 bg-gradient-to-r from-[#001534] to-[#021f4b] 
+      hover:from-blue-400 hover:to-blue-950 transition-all duration-300 
       shadow-md hover:shadow-lg transform hover:scale-105"
     >
-        
       <Icon width={22} height={22} className="opacity-80 group-hover:opacity-100 text-white" />
       {label}
     </motion.button>
@@ -66,12 +64,12 @@ const FuturisticImageGenerator: React.FC = () => {
   return (
     <div className="min-h-screen 
     bg-[#001534] flex flex-col items-center justify-center text-white p-8 sm:p-12 relative overflow-hidden border border-zinc-700 rounded-3xl shadow-xl mt-16 ">
+      
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))] rounded-3xl" />
-      
 
       {/* Upload Photo */}
-      <label className="cursor-pointer">
+      <label className="cursor-pointer mt-6 sm:mt-12">
         <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={handleUpload} />
         <CustomButton label="Upload Photo" icon={Upload} onClick={handleUploadClick} />
       </label>
@@ -81,14 +79,15 @@ const FuturisticImageGenerator: React.FC = () => {
         <motion.img
           src={uploadedImage}
           alt="Uploaded"
-          className="mt-6 w-80 h-80 object-cover rounded-xl border border-gray-300 shadow-lg"
+          className="mt-6 sm:mt-10 w-80 h-80 object-cover rounded-xl border border-gray-300 shadow-lg"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
         />
       )}
 
       {/* Main Content */}
-      <motion.div className="w-full max-w-3xl mx-auto flex flex-col items-center gap-8 px-6 py-8 border border-gray-700 rounded-3xl  backdrop-blur-md">
+      <motion.div className="w-full max-w-3xl mx-auto flex flex-col items-center gap-8 px-6 py-8 mt-6 sm:mt-12 border border-gray-700 rounded-3xl  backdrop-blur-md">
+        
         {/* Heading */}
         <div className="text-center space-y-5">
           <motion.span className="text-xs sm:text-sm uppercase tracking-wider bg-gray-800 px-5 py-2 rounded-full inline-block border border-zinc-600">
@@ -101,7 +100,7 @@ const FuturisticImageGenerator: React.FC = () => {
         </div>
 
         {/* Search Box */}
-        <motion.div className="relative w-full max-w-xl border  rounded-2xl bg-gray-200 p-2 flex items-center">
+        <motion.div className="relative w-full max-w-xl border rounded-2xl bg-gray-200 p-2 flex items-center">
           <Search width={22} height={22} className="ml-4 text-zinc-400" />
           <input
             type="text"
