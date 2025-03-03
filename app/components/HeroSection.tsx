@@ -20,7 +20,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-5xl md:text-6xl md:font-extrabold lg:font-extrabold lg:text-7xl font-extrabold"
+            className="text-5xl md:text-6xl md:font-bold lg:font-bold lg:text-7xl font-bold"
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-950 to-blue-600">Unleash Your</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-950 to-blue-600">Creativity,</span>
@@ -102,7 +102,7 @@ const HeroSection = () => {
           <motion.img
             src="/images/hero1.png"
             alt="Hero Image"
-            className="w-auto h-auto max-h-[60vh] lg:mt-20 md:max-h-screen lg:w-[700px] lg:h-[700px] object-contain rounded-lg relative z-10 mt-[-11px]"
+            className="w-auto h-auto max-h-[60vh] lg:mt-20 md:max-h-screen lg:w-[700px] lg:h-[700px] object-contain rounded-lg relative z-10 mt-[-20px]"
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
