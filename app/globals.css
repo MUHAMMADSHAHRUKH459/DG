@@ -1,13 +1,14 @@
-/* app/globals.css */
-
+/* Tailwind Base Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Define custom properties for light/dark theme */
+
+/* ✅ Light & Dark Theme Colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-family: 'Geist', sans-serif; /* Ensure Font is Loaded */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +18,20 @@
   }
 }
 
-/* Apply the background and foreground colors */
+/* ✅ Apply Theme Colors */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', ; /* Change to Inter or other custom fonts */
-  font-weight: 400; /* Optional: Add font weight for better control */
+  font-family: var(--font-family); 
+  font-weight: 400; /* Default Normal */
 }
 
-/* Optional: Tailwind font family setup */
-@import '@fontsource/inter/400.css'; /* If you're using Inter font */
+/* ✅ Fix Bold Issue Globally */
+strong, b {
+  font-weight: 700 !important; /* Ensuring Bold Works */
+}
+
+/* ✅ Tailwind Utility for Bold Fix */
+.font-bold {
+  font-weight: 700 !important;
+}
