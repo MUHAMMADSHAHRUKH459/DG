@@ -28,7 +28,7 @@ body {
 
 /* ✅ Fix Bold Issue Globally */
 strong, b {
-  font-weight: 700 !important; /* Ensuring Bold Works */
+  font-weight: 800 !important; /* Ensuring Bold Works */
 }
 
 /* ✅ Tailwind Utility for Bold Fix */
