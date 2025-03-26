@@ -13,4 +13,6 @@ export interface ProductOption {
   sizes: Size[];
   colors: ProductColor[];
   image: string;
+  description?: string;
+  price?: number;
 }

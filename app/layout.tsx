@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Header from "./components/navbar";
 import { CartProvider } from "./components/cart";
 import TopHeader from "./components/topheader";
+import { ImageProvider } from "@/context/imagecontext";  // Ensure correct import path
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,10 +33,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-          <TopHeader />
-          <Header />
-          {children}
-          <Footer />
+          <ImageProvider> {/* ✅ ImageProvider added here */}
+            <TopHeader />
+            <Header />
+            {children}
+            <Footer />
+          </ImageProvider>
         </CartProvider>
       </body>
     </html>

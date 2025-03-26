@@ -22,10 +22,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <Image 
-            src="/images/logooo.png" 
+            src="/images/logoo.png" 
             alt="Logo"
-            width={70}
-            height={50}
+            width={80}
+            height={80}
             className="cursor-pointer mr-2"
           />
         </Link>
